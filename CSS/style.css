@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background: linear-gradient(45deg, #0a0a0a, #3a4452);
     color: white;
     text-align: center;
     height: 100vh;
     overflow: hidden;
 }
+
 a {
     text-decoration: none;
 }
@@ -42,6 +44,7 @@ a {
     -o-transition: all .8s;
     -ms-transition: all .8s;
     transition: all .8s;
+    position: relative;
 }
 
 .menu a {
@@ -50,16 +53,17 @@ a {
     font-weight: 700;
     font-size: 2em;
 }
-.fa-bars{
+
+.fa-bars {
     display: block;
-color: white;
-margin-top: -45px !important;
+    color: white;
+    margin-top: -45px !important;
 
 }
 
 
 .toggle:checked+.style {
-    transform: translate(-50%, -50%) scale(.7);
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .menu input[type=checkbox]+label:before {
@@ -161,14 +165,16 @@ margin-top: -45px !important;
     transition-delay: 0.875s;
 }
 
-.style{
-    background-color:#343a40	;
-    margin-top: 200px ;
+.style {
+    /* background-color: #343a40; */
+    margin-top: 200px;
 }
-.fab{
+
+.fab {
     color: white !important;
 }
-.info{
+
+.info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -179,9 +185,11 @@ margin-top: -45px !important;
     font-size: 1.2em;
 
 }
-.m-mahrous{
+
+.m-mahrous {
     color: red;
 }
+
 .icon {
     width: 40px;
     height: 40px;
@@ -194,6 +202,7 @@ margin-top: -45px !important;
     transition: all .2s ease;
     background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
 }
+
 .face {
     background: #4267B2;
 }
@@ -223,6 +232,76 @@ margin-top: -45px !important;
     background: #25d366;
 
 }
-.email{
+
+.email {
     background: #315165;
 }
+
+/* style */
+.plate {
+    height: 80px;
+    width: 80px;
+    /* border: 2px solid red; */
+    /* position: absolute; */
+    margin-top: -72px;
+    margin-left: -3px;
+}
+
+.burger {
+    filter: url(#gooeyness);
+}
+
+.x {
+    transform: scale(0);
+    transition: transform 400ms;
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-width: 6px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform-origin: 50%;
+    transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+}
+
+
+.plate4 .x {
+    transition: transform 400ms;
+}
+
+.plate4 .line {
+    transform-origin: 50%;
+    transition: transform 400ms 100ms;
+}
+
+.active.plate4 .line {
+    transition: transform 400ms;
+}
+
+.active.plate4 .line1 {
+    transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(.7);
+}
+
+.active.plate4 .line2 {
+    transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(.7);
+}
+
+.active.plate4 .line3 {
+    transform: translateY(0px) rotate(45deg) scale(.7);
+}
+
+.active.plate4 .line4 {
+    transform: translateY(0px) rotate(-45deg) scale(.7);
+}
+
+.active.plate4 .line5 {
+    transform: translateX(18px) translateY(3px) rotate(45deg) scale(.7);
+}
+
+.active.plate4 .line6 {
+    transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(.7);
+}
+
+
