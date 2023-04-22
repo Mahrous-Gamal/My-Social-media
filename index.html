@@ -14,10 +14,26 @@
 <body>
     <div class="container">
         <div class='menu'>
+
             <input class='toggle' id='menu' type='checkbox'>
             <label class='style' for='menu'>
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+                <div class="plate plate4" onclick="this.classList.toggle('active')">
+                    <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 50,35 H 30" />
+                        <path class="line line2" d="M 50,35 H 70" />
+                        <path class="line line3" d="M 50,50 H 30" />
+                        <path class="line line4" d="M 50,50 H 70" />
+                        <path class="line line5" d="M 50,65 H 30" />
+                        <path class="line line6" d="M 50,65 H 70" />
+                    </svg>
+                    <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                        <path class="line" d="M 34,32 L 66,68" />
+                        <path class="line" d="M 66,32 L 34,68" />
+                    </svg>
+                </div>
             </label>
+
             <a class="tab linked icon" href="https://www.linkedin.com/in/mahrous-gamal-044693218/" target="_blank"><i
                     class="fab fa-linkedin-in"></i></a>
             <a class="tab insta icon" href="https://www.instagram.com/mahrous_gama1/" target="_blank"><i
@@ -26,9 +42,10 @@
                     class="fab fa-facebook-f"></i></a>
             <a class="tab github icon" href="https://github.com/MahrousGama1?tab=repositories" target="_blank"><i
                     class="fab fa-github"></i></a>
-            <a class="tab whats icon" href="https://wa.me/201001449752" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a class="tab whats icon" href="https://wa.me/201001449752" target="_blank"><i
+                    class="fab fa-whatsapp"></i></a>
             <a class="tab email" href="mailto:mahrousgamal2001@gmail.com" target="_blank"><i
-                    class="fa-solid fa-envelope"></i></a>     
+                    class="fa-solid fa-envelope"></i></a>
         </div><!-- menu -->
         <div class="info">
             <p><span class="m-mahrous">M</span>ahrous Gamal </p>
