@@ -22,6 +22,7 @@ Linux and macOS:
 ```bash
 sudo git clone https://github.com/Mahrous-Gamal/My-Social-media.git
 ```
+Windows:
 
 ```bash
 git clone https://github.com/Mahrous-Gamal/My-Social-media.git
